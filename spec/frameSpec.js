@@ -17,5 +17,11 @@ describe('Frame', function(){
 			frame.ballHit(3);
 			expect(frame.score).toEqual(7);
 		});
+
+		it('should have the number of rows changing after a ball has been thrown', function(){
+			var frame = new Frame();
+			frame.throwBall();
+			expect(frame.rows).toEqual(1);
+		});
 	});
 });

@@ -5,6 +5,10 @@ function Frame (){
 	this.ballHit = function(number){
 		return this.score -= number;
 	};
+
+	this.throwBall = function(){
+		return this.rows -= 1;
+	};
 };
 
 
